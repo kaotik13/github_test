@@ -62,7 +62,9 @@ a:hover{
     margin: 0 auto;
     width: 100%;
     background: #000;
-    position: relative;
+    position: absolute;
+    float: left;
+    height: 90%;
     /*height: 1346px;*/
 }
 /*.teaser{
@@ -95,25 +97,27 @@ a:hover{
 }
 .teaser .social_teaser .network.twitter{
     float: left;
-    position: relative;
-    top: 328px;
-    left: 310px;
+    position: absolute;
+    top: 30%;
+    left: 20%;
 }
 .teaser .social_teaser .network.facebook{
     float: right;
-    position: relative;
-    top: 328px;
-    right: 320px;
+    position: absolute;
+    top: 30%;
+    right: 20%;
 }
 
 
 
 .teaser {
-    height: 738px;
+    min-height: 100%;
     width: 100%;
     background-repeat: no-repeat;
-    background-position: center;
+    /*background-position: center;*/
     background-size: 100%;
+    float: left;
+    clear: both;
 }
  
 .teaser.t1 {
@@ -122,15 +126,21 @@ a:hover{
 .teaser.t2 {
   background-image: url("../img/fondo_teaser2.jpg");
 }
+.banner{
+    float: left;
+    clear: both;
+    height: 100%;
+    margin: 0 auto;
+}
 .toparrow{
     position: absolute; 
-    left: 750px; 
+    left: 70%;/*750px;*/ 
     margin-top: -25px;
     cursor: pointer;
 }
 .header_blog{
     background-image: url('../img/header_blog.png'); 
-    height: 79px; 
+    height: 12%; 
     margin-top: 5px; 
     z-index: 1000; 
     position: absolute; 
